@@ -2,7 +2,6 @@
 
 #![no_std]
 #![deny(warnings, missing_docs)]
-#![feature(naked_functions, asm_const)]
 
 mod thread;
 
