@@ -18,6 +18,13 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Fixed
 
+## [0.0.1] - 2022-10-10
+
+### Modified
+
+- Project structure to keep test functions at root module
+- Use `sbi-rt` v0.0.2 and `sbi-spec` v0.0.4
+
 ## [0.0.2] - 2023-01-20
 
 ### Modified
@@ -25,12 +32,14 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Update dependency crate `riscv` to version 0.10.1
 - Remove feature declaration `asm_sym`, bump MSRV to 1.66.0
 
-## [0.0.1] - 2022-10-10
+## [0.0.3] - 2025-5-16
 
-### Modified
+### Fixed
 
-- Project structure to keep test functions at root module
-- Use `sbi-rt` v0.0.2 and `sbi-spec` v0.0.4
+- Reorder date for CHANGELOG.md
+- Replace #[naked] with #[unsafe(naked)] across all relevant functions.
+- Remove `#![feature(naked_functions, asm_const)]` as they are no longer needed.
+- Switche to the `naked_asm!` macro to comply with new naked function requirements.
 
 [Unreleased]: https://github.com/rustsbi/sbi-testing/compare/v0.0.2...HEAD
 [0.0.2]: https://github.com/rustsbi/sbi-testing/compare/v0.0.1...v0.0.2
